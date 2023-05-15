@@ -1,0 +1,40 @@
+cd ~
+mkdir project-directory
+cd project-directory
+pip install poetry
+poetry --version
+poetry init
+
+# show the details of the virtual environment
+poetry env info
+
+# show only the virtual environment path
+poetry env info -p
+
+# set virtual environment path inside project directory
+poetry config virtualenvs.in-project true
+
+# install virtual environment with dependencies
+poetry install
+
+# activating virtual environment
+poetry shell
+
+# installing dependencies
+poetry add package-name
+
+# removing dependencies
+poetry remove package-name
+
+# exit from virtual environment
+exit
+
+# which environments are active
+poetry env list
+
+# deactivate the virtual environment
+deactivate
+
+# removing the virtual environment
+delete the .venv folder
+rm -r .venv/

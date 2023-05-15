@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "multi-tenancy-demo"
+version = "0.1.0"
+description = "An experimental project to learn multi-tenancy"
+authors = ["Febin Micheal Antony <febin@inteution.com>"]
+readme = "README.md"
+packages = [{include = "multi_tenancy_demo"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.95.1"
+uvicorn = "^0.22.0"
+SQLAlchemy = "^2.0.12"
+pydantic = "^1.10.7"
+starlette-admin = "^0.8.1"
+psycopg2-binary = "^2.9.6"
+alembic = "^1.10.4"
+typeguard = "^3.0.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
